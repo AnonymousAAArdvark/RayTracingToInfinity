@@ -13,7 +13,7 @@
 
 class sphere : public hittable {
 public:
-    sphere(point3 cen, double r, shared_ptr<material> m)
+    sphere(point3 cen, float r, shared_ptr<material> m)
         : center(cen), radius(r), mat_ptr(std::move(m)) {};
 
     bool hit(const ray& r, float t_min, float t_max, hit_record& rec) const override;
@@ -22,7 +22,7 @@ public:
 
 private:
     point3 center;
-    double radius;
+    float radius;
     shared_ptr<material> mat_ptr;
 
     static void get_sphere_uv(const point3& p, float &u, float &v) {

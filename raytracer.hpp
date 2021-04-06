@@ -12,12 +12,13 @@
 #include "hittable/hittable_list.hpp"
 #include "hittable/sphere.hpp"
 #include "hittable/2dhittables.hpp"
-#include "material.hpp"
+#include "modifiers/material.hpp"
 #include "hittable/moving_sphere.hpp"
 #include "hittable/box.hpp"
-#include "rotate.hpp"
-#include "constant_medium.hpp"
+#include "modifiers/rotate.hpp"
+#include "modifiers/constant_medium.hpp"
 #include "hittable/bvh.hpp"
+#include "hittable/cylinder.hpp"
 
 color ray_color(const ray& r, const color& background, const shared_ptr<hittable_list>& world, int depth) {
     hit_record rec;
@@ -246,6 +247,19 @@ hittable_list final_scene() {
                 )
             );
 
+    return objects;
+}
+
+hittable_list single_cylinder() {
+    hittable_list objects;
+
+    objects.add(make_shared<sphere>(point3(0, -1000, 0), 1000, make_shared<lambertian>(color(.2, .7, .2))));
+
+    auto material1 = make_shared<lambertian>(color(.7f, .5f, .5f));
+    shared_ptr<hittable> cyl = make_shared<cylinder>(point3(0, 1, 1), 1.0f, 2.0f, material1);
+    cyl = make_shared<rotate_y>(cyl, -18);
+
+    objects.add(cyl);
     return objects;
 }
 

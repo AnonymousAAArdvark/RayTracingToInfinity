@@ -16,10 +16,10 @@
 #include "hittable/2dhittables.hpp"
 
 float params::ASPECT_RATIO = 1.0f;
-unsigned params::WIDTH = 1000;
+unsigned params::WIDTH = 100;
 unsigned params::HEIGHT = int(params::WIDTH / params::ASPECT_RATIO);
 
-unsigned params::N = 20;//16;
+unsigned params::N = 10;//16;
 unsigned params::N_samples = 200;
 unsigned params::MAX_DEPTH = 16;
 
@@ -85,13 +85,21 @@ int main() {
             lookat = point3(278, 278, 0);
             vfov = 40.0f;
             break;
-        default:
         case 8:
             world = final_scene();
             background = color(0,0,0);
             lookfrom = point3(478, 278, -600);
             lookat = point3(278, 278, 0);
             vfov = 40.0f;
+            break;
+        default:
+        case 9:
+            world = single_cylinder();
+            background = color(.7f, .8f, 1.0f);
+            lookfrom = point3(13, 2, 3);
+            lookat = point3(0, 0, 0);
+            vfov = 20.0f;
+            aperture = .1f;
             break;
     }
 

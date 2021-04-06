@@ -4,7 +4,7 @@
 #include "color.hpp"
 #include "hittable/hittable_list.hpp"
 #include "hittable/sphere.hpp"
-#include "material.hpp"
+#include "modifiers/material.hpp"
 #include "timer.hpp"
 #include "raytracer.hpp"
 
