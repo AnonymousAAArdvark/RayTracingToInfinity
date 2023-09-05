@@ -10,9 +10,9 @@
 - Export to PNG, a filetype more user-friendly than PPM
 - Some code refactoring
 ## Some Renders
-![skybox](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/skybox2.jpg)
-![coin](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/coin.jpg)
-![final render](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/final_render.jpg)
-![random scene](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/imagehq.jpg)
-![cornell glass objects](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/denoised_glass_x2.jpg)
-![cornell smoke blocks](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/denoised_photos_v2_x2.jpg)
+![skybox](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/_skybox2.jpg)
+![coin](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/_coin.jpg)
+![final render](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/_final_render.jpg)
+![random scene](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/_imagehq.jpg)
+![cornell glass objects](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/_denoised_glass_x2.jpg)
+![cornell smoke blocks](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/_denoised_photos_v2_x2.jpg)
