@@ -7,7 +7,7 @@
 - Frosted and colored glass
 - X and Z axis rotations
 - Render de-noising through [Open-Image-Denoise](https://github.com/OpenImageDenoise/oidn)
-- Export to PNG, a filetype more user-friendly than PPM.
+- Export to PNG, a filetype more user-friendly than PPM
 - Some code refactoring
 ## Some Renders
 ![skybox](https://github.com/AnonymousAAArdvark/RayTracingToInfinity/blob/master/output/skybox2.jpg)
